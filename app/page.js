@@ -10,17 +10,6 @@ function Page() {
   const [jokes, setJokes] = useState([]);
   const [isMenuOpen, setisMenuOpen] = useState(false);
 
-  useEffect(() => {
-    axios
-      .get("/api/jokes")
-      .then(function (response) {
-        console.log(response.data);
-        setJokes(response.data);
-      })
-      .catch(function (error) {
-        console.log("Error: ", error);
-      });
-  }, []);
 
   const handleMenuClick = () => {
     setisMenuOpen(!isMenuOpen);
@@ -62,7 +51,7 @@ function Page() {
           src={"\images\logo02.png"}
           alt='Logo'
           /> */}
-          <img src="\images\logo02.png" alt="logo54" className="w-32" />
+          {/* <img src="\images\logo02.png" alt="logo54" className="w-32" /> */}
           <span>
             &copy; 2024 | Deep Blue Thoughts. | All rights reserved.| Kaif Khan{" "}
           </span>
@@ -89,7 +78,7 @@ function Page() {
               Log-In
             </Link>
             <Link href={'/register'} className="px-3 py-3 border-none rounded-3xl font-semibold bg-white text-black hover:bg-gray-400">
-              ↠ Let's Connect
+              ↠ Let &apos;s Connect
             </Link>
             <div className="block ">
             <button onClick={handleMenuClick} className="p-2">
@@ -126,7 +115,7 @@ function Page() {
           >
             Welcome to Our Post Platform! Stay updated with the latest posts,
             and manage your content effortlessly. Create, read, update, and
-            delete posts with ease. Your voice matters, and we're here to help
+            delete posts with ease. Your voice matters, and we&apos;re here to help
             you share it!
           </marquee>
         </div>
@@ -145,7 +134,7 @@ function Page() {
             </span>
             <div className="w-2/3 ">
               <span className="text-[30px] sm:text-[75px]">
-                Let's Launch Your Journey
+                Let &apos;s Launch Your Journey
               </span>
               <Image
             src={"/images/asteric.svg"}
