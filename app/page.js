@@ -36,14 +36,14 @@ function Page() {
           <Link href={'/home'} className="text-2xl  hover:bg-gray-600 block text-center border-t-2 sm:border-t-[1px] sm:text-base border-gray-500 py-6 sm:py-2 font-semibold ">
             HOME
           </Link> 
-          <Link href={'/contact-us'} className="text-2xl hover:bg-gray-600 block text-center border-t-2 sm:border-t-[1px] sm:text-base border-gray-500 py-6 sm:py-2 font-semibold ">
-            CONTACT-US
-          </Link>
-          <Link href={'/about-us'} className="text-2xl hover:bg-gray-600 block text-center border-t-2 sm:border-t-[1px] sm:text-base border-gray-500 py-6 sm:py-2 font-semibold ">
-            ABOUT_US
+          <Link href={'/register'} className="text-2xl hover:bg-gray-600 block text-center border-t-2 sm:border-t-[1px] sm:text-base border-gray-500 py-6 sm:py-2 font-semibold ">
+            REGISTER
           </Link>
           <Link href={'login'} className="text-2xl hover:bg-gray-600 block text-center border-t-2 sm:border-t-[1px] sm:text-base border-gray-500 py-6 sm:py-2 font-semibold ">
             LOG-IN
+          </Link>
+          <Link href={'/contact-us'} className="text-2xl hover:bg-gray-600 block text-center border-t-2 sm:border-t-[1px] sm:text-base border-gray-500 py-6 sm:py-2 font-semibold ">
+            CONTACT-US
           </Link>
         </ul>
         <div className="text-white text-center flex flex-col items-center justify-center ">
