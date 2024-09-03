@@ -35,7 +35,7 @@ function Page() {
         <ul className="flex flex-col  w-full h-[70%] sm:h-[50%]  text-white">
           <Link href={'/home'} className="text-2xl  hover:bg-gray-600 block text-center border-t-2 sm:border-t-[1px] sm:text-base border-gray-500 py-6 sm:py-2 font-semibold ">
             HOME
-          </Link>
+          </Link> 
           <Link href={'/contact-us'} className="text-2xl hover:bg-gray-600 block text-center border-t-2 sm:border-t-[1px] sm:text-base border-gray-500 py-6 sm:py-2 font-semibold ">
             CONTACT-US
           </Link>
@@ -47,11 +47,12 @@ function Page() {
           </Link>
         </ul>
         <div className="text-white text-center flex flex-col items-center justify-center ">
-          {/* <Image
-          src={"\images\logo02.png"}
-          alt='Logo'
-          /> */}
-          {/* <img src="\images\logo02.png" alt="logo54" className="w-32" /> */}
+          <Image 
+          src={'/images/logo02.png'}
+          alt={'logo'}
+          width={'100'}
+          height={'100'}
+          />
           <span>
             &copy; 2024 | Deep Blue Thoughts. | All rights reserved.| Kaif Khan{" "}
           </span>
