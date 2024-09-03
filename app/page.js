@@ -74,27 +74,27 @@ function Page() {
 
          
 
-          <div className="gap-5 hidden sm:flex ">
-            <Link href={'/login'} className="px-3 py-3 border-none rounded-3xl font-semibold hover:bg-gray-700 ">
+          <div className="gap-5 flex ">
+            <Link href={'/login'} className="px-3 hidden sm:flex py-3 border-none rounded-3xl font-semibold hover:bg-gray-700 ">
               Log-In
             </Link>
-            <Link href={'/register'} className="px-3 py-3 border-none rounded-3xl font-semibold bg-white text-black hover:bg-gray-400">
+            <Link href={'/register'} className="px-3 hidden sm:flex py-3 border-none rounded-3xl font-semibold bg-white text-black hover:bg-gray-400">
               ↠ Let &apos;s Connect
             </Link>
             <div className="block ">
-            <button onClick={handleMenuClick} className="p-2">
+            <button onClick={handleMenuClick} className="p-2 flex">
               <FaBars size={24} />
             </button>
           </div>
           </div>
         </nav>
-        <section className="w-full h-[60vh] flex flex-col items-center justify-center sm:flex-row p-4 mt-1">
+        <section className="w-full min-h-[60vh] flex flex-col items-center justify-center sm:flex-row p-4 mt-1">
           <h1 className=" h-full text-6xl text-center px-8">
             Create, Connect, and <span>&#8621;</span> Grow with Your{" "}
             <span>&#10033;</span> Stories.
           </h1>
           <div className="w-2/3 font-[wilf] flex sm:flex-col sm:h-full flex-col gap-8 items-center   justify-between  sm:items-start sm:justify-between">
-            <p className="text-center sm:text-start">
+            <p className="text-center sm:text-start mt-3">
               Deep Blue Thoughts is the ultimate platform for expressing
               yourself through text and images. Share your moments, ideas, and
               creativity with a community that values your voice.

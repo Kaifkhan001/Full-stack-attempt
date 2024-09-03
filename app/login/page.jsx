@@ -3,9 +3,9 @@ import Image from 'next/image'
 
 const page = () => {
   return (
-    <div className='w-full min-h-screen bg-black text-white flex  items-center justify-center'>
-      <div className="login w-[85%] min-h-[90%]  bg-gray-700 rounded-xl flex flex-col items-center justify-center">
-           <div className='w-full h-1/2 flex flex-col pt-12 items-center justify-center'>
+    <div className='w-full min-h-screen bg-black text-white flex   items-center justify-center'>
+      <div className="login w-[85%] min-h-[90%]  bg-gray-700 rounded-xl sm:flex-row my-12 flex flex-col items-center justify-center">
+           <div className='w-full h-1/2 sm:w-1/2  flex flex-col pt-12 items-center justify-center'>
             <span className='font-semibold text-xl my-2'>LOGIN</span>
             <p className='text-sm pb-2'>Log-in to Make Magic Here</p>
             <form action="" className='flex items-center justify-center flex-col'>
@@ -19,7 +19,7 @@ const page = () => {
               src={'/images/google.png'}
               width={'40'}
               height={'40'}
-              className='w-[7vw] h-[3vh]'
+              className='w-[7vw] h-[3vh] sm:w-[4vw] sm:h-[6vh]'
               />
               <span><span className='font-bold'>Login</span> with google</span>
             </button>
@@ -28,10 +28,15 @@ const page = () => {
               src={'/images/facebook.png'}
               width={'40'}
               height={'40'}
-              className='w-[7vw] h-[3vh]'
+              className='w-[7vw] h-[3vh] sm:w-[4vw] sm:h-[7vh]'
               />
               <span><span className='font-bold'>Login</span> with facebook</span>
             </button>
+           </div>
+           <div className='sm:w-1/2 h-full bg-gray-700  flex items-center justify-center '>
+               <div className='w-1/2 h-1/2 bg-gray-800 '>
+                    <img src="/images/man.png" alt="" className='pt-10 w-' />  
+               </div>
            </div>
       </div>
     </div>
