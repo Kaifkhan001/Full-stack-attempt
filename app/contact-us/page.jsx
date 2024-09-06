@@ -1,6 +1,6 @@
 import React from 'react'
 
-const page = () => {
+const Page = () => {
   return (
     <div className='w-full min-h-screen bg-[#0E112D] px-8 py-20 text-white sm:flex'>
      <div className='sm:min-h-[65vh] sm:w-3/5 sm:flex sm:flex-col sm:items-start sm:justify-between '>
@@ -19,4 +19,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

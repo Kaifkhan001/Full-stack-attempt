@@ -2,7 +2,7 @@
 import axios from 'axios';
 import React,{useState} from 'react'
 
-const page = () => {
+const Page = () => {
     const [user, setuser] = useState(null);
     useEffect(() => {
         axios.get('')
@@ -21,3 +21,4 @@ const page = () => {
   )
 }
 
+export default Page;

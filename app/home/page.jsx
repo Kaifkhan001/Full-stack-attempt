@@ -1,6 +1,6 @@
 import React from 'react'
 
-const page = () => {
+const Page = () => {
   return (
     <div className='w-full min-h-screen bg-black text-white flex flex-col gap-3 items-center justify-center'>
       <h2 className=''>This Is The Homepage Section Area</h2>
@@ -9,4 +9,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
