@@ -36,7 +36,7 @@ function Page() {
           <Link href={'/home'} className="text-2xl  hover:bg-gray-600 block text-center border-t-2 sm:border-t-[1px] sm:text-base border-gray-500 py-6 sm:py-2 font-semibold ">
             HOME
           </Link> 
-          <Link href={'/register'} className="text-2xl hover:bg-gray-600 block text-center border-t-2 sm:border-t-[1px] sm:text-base border-gray-500 py-6 sm:py-2 font-semibold ">
+          <Link href={'/api/register'} className="text-2xl hover:bg-gray-600 block text-center border-t-2 sm:border-t-[1px] sm:text-base border-gray-500 py-6 sm:py-2 font-semibold ">
             REGISTER
           </Link>
           <Link href={'login'} className="text-2xl hover:bg-gray-600 block text-center border-t-2 sm:border-t-[1px] sm:text-base border-gray-500 py-6 sm:py-2 font-semibold ">
@@ -78,7 +78,7 @@ function Page() {
             <Link href={'/login'} className="px-3 hidden sm:flex py-3 border-none rounded-3xl font-semibold hover:bg-gray-700 ">
               Log-In
             </Link>
-            <Link href={'/register'} className="px-3 hidden sm:flex py-3 border-none rounded-3xl font-semibold bg-white text-black hover:bg-gray-400">
+            <Link href={'/api/register'} className="px-3 hidden sm:flex py-3 border-none rounded-3xl font-semibold bg-white text-black hover:bg-gray-400">
               ↠ Let &apos;s Connect
             </Link>
             <div className="block ">

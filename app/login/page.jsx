@@ -9,7 +9,7 @@ const page = () => {
             <span className='font-semibold text-xl my-2'>LOGIN</span>
             <p className='text-sm pb-2'>Log-in to Make Magic Here</p>
             <form action="" className='flex items-center justify-center flex-col'>
-              <input type="text" className='bg-gray-400 text-black placeholder-gray-700 px-2  py-1 rounded-lg mt-2' placeholder='Username' />
+              <input type="text" className='bg-gray-400 text-black placeholder-gray-700 px-2  py-1 rounded-lg mt-2' placeholder='Email' />
               <input type="password" name="" id="" className='bg-gray-400 text-black placeholder-gray-700 px-2 py-1 rounded-lg mt-2' placeholder='Password'/>
               <input type="submit" value="Login Now" className='px-3 py-2 rounded-xl bg-black text-white my-3 hover:cursor-pointer hover:bg-gray-900' />
             </form>
