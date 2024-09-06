@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect,useState } from "react";
 import axios from "axios";
-import { redirect } from "next/dist/server/api-utils";
+import { useRouter } from "next/navigation";
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +10,8 @@ const Register = () => {
     password: '',
     confirmPassword: ''
   })
+
+  const router = useRouter();
 
   const handleChange = (e) => {
    setFormData({...formData, [e.target.name]: e.target.value});
@@ -20,6 +22,8 @@ const Register = () => {
 
    try {
     const response = await axios.post('https://backend-attempt01.onrender.com/api/register', formData);
+    setFormData('');
+   router.push('/success');
     console.log(response);
    } catch (error) {
     console.log("Error registering user: ", error);
@@ -79,7 +83,7 @@ const Register = () => {
               <input type="checkbox" name="subscribe" />
               Subscribe
             </label>
-            <input type="submit" value="Create" className="bg-gray-600 py-1 px-4 font-semibold text-sm hover:cursor-pointer hover:bg-gray-700 rounded-lg " />
+            <input type="submit" value="Create" className="bg-gray-600  py-2 px-5 font-semibold text-base sm:text-sm hover:cursor-pointer hover:bg-gray-700 rounded-lg " />
           </div>
         </form>
           <h3 className="mt-4 text-xs"><a href="" className="text-blue-700 hover:text-blue-800">Terms</a> and <a href="" className="text-blue-700 hover:text-blue-800">Conditions</a></h3>

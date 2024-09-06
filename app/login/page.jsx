@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-const Page = () => {
+const page = () => {
   return (
     <div className='w-full min-h-screen bg-black text-white flex   items-center justify-center'>
       <div className="login min-w-[75%] min-h-[90%] sm:min-w-[37%] bg-gray-700 rounded-xl my-12 flex flex-col items-center justify-center">
@@ -40,4 +40,4 @@ const Page = () => {
   )
 }
 
-export default Page
+export default page
