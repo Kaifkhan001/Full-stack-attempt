@@ -1,6 +1,7 @@
 "use client"
 import React, { useEffect,useState } from "react";
 import axios from "axios";
+import { redirect } from "next/dist/server/api-utils";
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -18,7 +19,7 @@ const Register = () => {
    e.preventDefault();
 
    try {
-    const response = await axios.post('http://localhost:5000/api/register', formData);
+    const response = await axios.post('https://backend-attempt01.onrender.com/api/register', formData);
     console.log(response);
    } catch (error) {
     console.log("Error registering user: ", error);
